@@ -6,3 +6,4 @@ dependencies :
     - pytest
     - tqdm
     - matplotlib
+    - numpy
