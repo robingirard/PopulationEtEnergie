@@ -8,7 +8,7 @@ def prediction(data, year_0, year_n, year_i, year_f, pas=1):
     grâce aux données entre year_0 et year_n '''
 
     calcul = data.loc[[i for i in range(year_0, year_n + pas,  pas)]]
-    print(calcul)
+    # print(calcul)
     n, m = calcul.shape[0], calcul.shape[1]
 
     pred = pd.DataFrame(np.zeros(((year_f-year_i)+1, m), dtype = np.int8),
